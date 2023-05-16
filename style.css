@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 30px;
+  transition: background-color 0.3s ease;	
+}
+
+header nav li:hover {
+  background-color: #555555;
+  transition: background-color 0.3s ease;
+}
+
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav li a:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+main {
+  padding: 0px;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Home Section */
+#home {
+  background-image: url('truck1.jpg'), url('truck2.jpg'), url('truck3.jpg'), url('truck4.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideshow 20s infinite steps(1);
+}
+
+@keyframes slideshow {
+  25% {
+    background-image: url('truck1.jpg');
+  }
+  50% {
+    background-image: url('truck2.jpg');
+  }
+  75% {
+    background-image: url('truck3.jpg');
+  }
+  100% {
+    background-image: url('truck4.jpg');
+  }
+}
+#home h1 {
+  font-size: 48px;
+  text-shadow: 4px 4px 8px #000000, 0 0 10px rgba(255,255,255,0.2);
+}
+
+#home p {
+  font-size: 24px;
+  text-shadow: 4px 4px 8px #000000, 0 0 10px rgba(255,255,255,0.2);
+}
+
+/*
+
+/* About Section */
+#about {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* add this */
+  align-items: center;
+  justify-content: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 0; /* add this */
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#about h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+}
+
+/* Services Section */
+#services {
+  background-color: #fff;
+  color: #333;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* add this */
+  align-items: center;
+  justify-content: center;
+}
+
+#services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 0; /* add this */
+}
+
+#services ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#services li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#services li:before {
+  content: "\2022";
+  color: #f44336;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#services h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Contact Us Section */
+#contact {
+  background-color: #f1f1f1;
+  color: #333;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* add this */
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 0; /* add this */
+}
+
+#contact form {
+  width: 50%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact input[type="submit"] {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #ff704d;
+}
+
+#contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: grey; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
