@@ -9,6 +9,12 @@ header {
   background-color: #000000;
   color: #fff;
   padding: 15px;
+  text-align: center;
+}
+
+header nav {
+  display: inline-block;
+  margin: 0 auto; /* Center the navigation bar horizontally */
 }
 
 header nav ul {
